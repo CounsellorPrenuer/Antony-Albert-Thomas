@@ -50,7 +50,7 @@ export default async function HomePage() {
       <section className="bg-slate-50 py-16 sm:py-20" id="about">
         <Container className="grid gap-10 md:grid-cols-2 items-center">
           <div className="order-2 md:order-1 relative aspect-square overflow-hidden rounded-3xl md:h-96 w-full max-w-md mx-auto">
-             <Image src="/founder.png" alt="Antony Albert Thomas" fill className="object-cover" />
+             <Image src="/Antony-Albert-Thomas/founder.png" alt="Antony Albert Thomas" fill className="object-cover" />
           </div>
           <div className="order-1 md:order-2">
             <SectionHeading title="About Founder" subtitle="Antony Albert Thomas" />
@@ -89,24 +89,7 @@ export default async function HomePage() {
         </Container>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section className="bg-white py-16 sm:py-20" id="testimonials">
-        <Container>
-          <SectionHeading title="Testimonials" subtitle="Trust built through real outcomes." />
-          <div className="grid gap-6 md:grid-cols-3">
-            {testimonials.slice(0, 3).map((testimonial: any) => (
-              <TestimonialCard
-                key={testimonial._id}
-                quote={testimonial.quote}
-                name={testimonial.name}
-                role={testimonial.role}
-                audience={testimonial.audience}
-                rating={testimonial.rating}
-              />
-            ))}
-          </div>
-        </Container>
-      </section>
+      {/* TESTIMONIALS REMOVED AS REQUESTED */}
 
       {/* CONTACT US */}
       <section className="bg-slate-50 py-16 sm:py-20" id="contact">

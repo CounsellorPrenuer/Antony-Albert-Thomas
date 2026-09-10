@@ -7,7 +7,6 @@ const navItems = [
   { href: "/#about", label: "About Founder" },
   { href: "/#services", label: "Services" },
   { href: "/#packages", label: "Mentoria Packages" },
-  { href: "/#testimonials", label: "Testimonials" },
   { href: "/#contact", label: "Contact Us" },
 ];
 
@@ -20,7 +19,7 @@ export function Navbar({ brandName }: NavbarProps) {
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
       <Container className="flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 text-lg font-semibold text-[#001F3F]">
-          <Image src="/logo.png" alt="Blueprint Advisors Logo" width={150} height={40} className="object-contain max-h-10 w-auto" />
+          <Image src="/Antony-Albert-Thomas/logo.png" alt="Blueprint Advisors Logo" width={150} height={40} className="object-contain max-h-10 w-auto" />
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           {navItems.map((item) => (
