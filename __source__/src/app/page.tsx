@@ -6,16 +6,15 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ServiceCard } from "@/components/ui/ServiceCard";
 import { TestimonialCard } from "@/components/ui/TestimonialCard";
 import { ContactForm } from "@/components/sections/ContactForm";
-import { PackageCard } from "@/components/ui/PackageCard";
-import { getFeaturedTestimonials, getHomePage, getRecentPosts, getServices, getPackages } from "@/sanity/lib/content";
+import { MentoriaTabs } from "@/components/ui/MentoriaTabs";
+import { getFeaturedTestimonials, getHomePage, getRecentPosts, getServices } from "@/sanity/lib/content";
 
 export default async function HomePage() {
-  const [home, services, testimonials, posts, packages] = await Promise.all([
+  const [home, services, testimonials, posts] = await Promise.all([
     getHomePage(),
     getServices(),
     getFeaturedTestimonials(),
     getRecentPosts(),
-    getPackages(),
   ]);
 
   return (
@@ -65,18 +64,12 @@ export default async function HomePage() {
         </Container>
       </section>
 
-      {packages && packages.length > 0 && (
-        <section className="bg-slate-50 py-16 sm:py-20">
+        <section className="bg-slate-50 py-16 sm:py-20" id="packages">
           <Container>
-            <SectionHeading title="Mentoria Packages" subtitle="Select the plan that fits your career aspirations." />
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {packages.map((pkg: any) => (
-                <PackageCard key={pkg._id} pkg={pkg} />
-              ))}
-            </div>
+            <SectionHeading title="Mentoria's Plans" subtitle="Select the plan that fits your career aspirations." />
+            <MentoriaTabs />
           </Container>
         </section>
-      )}
 
       <section className="bg-white py-16 sm:py-20">
         <Container>
