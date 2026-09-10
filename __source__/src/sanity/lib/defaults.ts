@@ -41,7 +41,29 @@ export const defaultServices: Array<{
   image?: unknown;
   ctaLabel?: string;
   ctaHref?: string;
-}> = [];
+}> = [
+  {
+    _id: "service-1",
+    title: "Career Guidance",
+    summary: "Expert career counseling to help you discover and align your strengths with market opportunities.",
+    ctaLabel: "Learn More",
+    ctaHref: "/#contact",
+  },
+  {
+    _id: "service-2",
+    title: "Workshops & Seminars",
+    summary: "Engaging group sessions designed to build essential skills and prepare you for the professional landscape.",
+    ctaLabel: "Learn More",
+    ctaHref: "/#contact",
+  },
+  {
+    _id: "service-3",
+    title: "Admission Guidance",
+    summary: "Strategic support for university and college admissions, ensuring your profile stands out.",
+    ctaLabel: "Learn More",
+    ctaHref: "/#contact",
+  }
+];
 
 export const defaultTestimonials: Array<{
   _id: string;
