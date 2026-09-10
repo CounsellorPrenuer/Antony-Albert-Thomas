@@ -209,7 +209,7 @@ export function MentoriaTabs() {
               ))}
             </ul>
             
-            <a href="/contact" className={`mt-auto block w-full rounded-full py-3.5 text-center text-sm font-bold text-white transition-colors ${pkg.type === 'PREMIUM' ? 'bg-[#4353FF] hover:bg-blue-700' : 'bg-[#8F9CFF] hover:bg-blue-400'}`}>
+            <a href="/contact" style={{ color: "#ffffff" }} className={`mt-auto block w-full rounded-full py-3.5 text-center text-sm font-bold text-white transition-colors ${pkg.type === 'PREMIUM' ? 'bg-[#4353FF] hover:bg-blue-700' : 'bg-[#8F9CFF] hover:bg-blue-400'}`}>
               BUY NOW
             </a>
           </div>
@@ -229,7 +229,7 @@ export function MentoriaTabs() {
               <p className="text-sm font-extrabold text-[#001F3F] mt-1">{pkg.price}</p>
               <p className="text-sm text-slate-600 mt-3">{pkg.desc}</p>
             </div>
-            <a href="/contact" className="inline-block rounded bg-[#8F9CFF] px-6 py-2 text-sm font-bold text-white hover:bg-blue-500 text-center w-full sm:w-auto mt-4 self-start">
+            <a href="/contact" className="inline-block rounded bg-[#8F9CFF] px-6 py-2 text-sm font-bold text-white" style={{ color: "#ffffff" }} hover:bg-blue-500 text-center w-full sm:w-auto mt-4 self-start">
               BUY NOW
             </a>
           </div>

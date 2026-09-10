@@ -30,7 +30,8 @@ export function Navbar({ brandName }: NavbarProps) {
         </nav>
         <Link
           href="/book-session"
-          className="rounded-md bg-[#001F3F] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#0b2e54]"
+          className="rounded-md px-4 py-2 text-sm font-semibold transition hover:opacity-90"
+          style={{ backgroundColor: "#001F3F", color: "#ffffff" }}
         >
           Book a Session
         </Link>

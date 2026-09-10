@@ -26,7 +26,11 @@ export default async function HomePage() {
             <h1 className="mt-3 text-4xl font-semibold leading-tight text-[#001F3F] sm:text-5xl">{home.heroTitle}</h1>
             <p className="mt-5 text-base leading-relaxed text-slate-600 sm:text-lg">{home.heroDescription}</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link href={home.heroCtaHref || "/book-session"} className="rounded-md bg-[#001F3F] px-6 py-3 text-sm font-semibold text-white">
+              <Link 
+                href={home.heroCtaHref || "/book-session"} 
+                className="rounded-md px-6 py-3 text-sm font-semibold transition hover:opacity-90"
+                style={{ backgroundColor: "#001F3F", color: "#ffffff" }}
+              >
                 {home.heroCtaLabel || "Book a Free Career Call"}
               </Link>
               <Link href="/services" className="rounded-md border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700">
