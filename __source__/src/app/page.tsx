@@ -21,13 +21,13 @@ export default async function HomePage() {
   return (
     <div>
       {/* HOME */}
-      <section className="bg-white py-16 sm:py-20" id="home">
-        <Container className="grid items-center gap-10 md:grid-cols-2">
+      <section className="bg-white py-16 sm:py-24" id="home">
+        <Container className="flex flex-col items-center text-center max-w-4xl mx-auto">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-[#001F3F]">STRATEGIC CAREER ARCHITECTS</p>
             <h1 className="mt-3 text-4xl font-semibold leading-tight text-[#001F3F] sm:text-5xl">Transform Career Uncertainty Into Intentional Success</h1>
-            <p className="mt-5 text-base leading-relaxed text-slate-600 sm:text-lg">If you are ready to move beyond wishing to planning, our expertise is your essential foundation.</p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <p className="mt-5 text-base leading-relaxed text-slate-600 sm:text-lg max-w-2xl mx-auto">If you are ready to move beyond wishing to planning, our expertise is your essential foundation.</p>
+            <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Link 
                 href="/#contact" 
                 className="rounded-md px-6 py-3 text-sm font-semibold transition hover:opacity-90"
@@ -38,10 +38,6 @@ export default async function HomePage() {
               <Link href="/#services" className="rounded-md border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700">
                 Explore Services
               </Link>
-            </div>
-          </div>
-          <div className="h-80 overflow-hidden rounded-3xl bg-slate-100 flex items-center justify-center">
-             <SanityImage image={home.heroImage} alt="Blueprint Advisors" className="h-80 object-cover w-full" />
           </div>
         </Container>
       </section>
@@ -49,8 +45,8 @@ export default async function HomePage() {
       {/* ABOUT FOUNDER */}
       <section className="bg-slate-50 py-16 sm:py-20" id="about">
         <Container className="grid gap-10 md:grid-cols-2 items-center">
-          <div className="order-2 md:order-1 relative aspect-square overflow-hidden rounded-3xl md:h-96 w-full max-w-md mx-auto">
-             <Image src="/Antony-Albert-Thomas/founder.png" alt="Antony Albert Thomas" fill className="object-cover" />
+          <div className="order-2 md:order-1 relative w-full max-w-md mx-auto">
+             <Image src="/Antony-Albert-Thomas/founder.png" alt="Antony Albert Thomas" width={500} height={600} className="object-contain w-full h-auto rounded-3xl" />
           </div>
           <div className="order-1 md:order-2">
             <SectionHeading title="About Founder" subtitle="Antony Albert Thomas" />
@@ -96,6 +92,16 @@ export default async function HomePage() {
         <Container className="grid gap-8 md:grid-cols-2">
           <div>
             <SectionHeading title="Contact Us" subtitle="Let's build your custom career blueprint." />
+            <div className="mt-8 space-y-4 text-slate-700 text-lg">
+              <p>
+                <strong>Email: </strong> 
+                <a href="mailto:thomas2020vision@gmail.com" className="hover:text-[#001F3F] transition-colors">thomas2020vision@gmail.com</a>
+              </p>
+              <p>
+                <strong>Phone: </strong> 
+                <a href="tel:+919159005588" className="hover:text-[#001F3F] transition-colors">+91 9159005588</a>
+              </p>
+            </div>
           </div>
           <ContactForm endpoint="/api/contact" submitLabel="Send Message" />
         </Container>

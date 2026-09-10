@@ -12,6 +12,18 @@ export function SanityImage({ image, alt, className = "" }: SanityImageProps) {
     return <div className={`rounded-2xl bg-slate-100 ${className}`} />;
   }
 
+  if (typeof image === 'string') {
+    return (
+      <Image
+        src={image}
+        alt={alt}
+        width={1200}
+        height={800}
+        className={`h-full w-full rounded-2xl object-cover ${className}`}
+      />
+    );
+  }
+
   const src = urlFor(image).width(1200).height(800).fit("crop").url();
 
   return (

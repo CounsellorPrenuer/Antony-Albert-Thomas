@@ -46,6 +46,7 @@ export const defaultServices: Array<{
     _id: "service-1",
     title: "Career Guidance",
     summary: "Expert career counseling to help you discover and align your strengths with market opportunities.",
+    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=800&auto=format&fit=crop",
     ctaLabel: "Learn More",
     ctaHref: "/#contact",
   },
@@ -53,6 +54,7 @@ export const defaultServices: Array<{
     _id: "service-2",
     title: "Workshops & Seminars",
     summary: "Engaging group sessions designed to build essential skills and prepare you for the professional landscape.",
+    image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=800&auto=format&fit=crop",
     ctaLabel: "Learn More",
     ctaHref: "/#contact",
   },
@@ -60,6 +62,7 @@ export const defaultServices: Array<{
     _id: "service-3",
     title: "Admission Guidance",
     summary: "Strategic support for university and college admissions, ensuring your profile stands out.",
+    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800&auto=format&fit=crop",
     ctaLabel: "Learn More",
     ctaHref: "/#contact",
   }
