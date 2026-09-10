@@ -1,28 +1,28 @@
 export const defaultSiteSettings = {
-  brandName: "",
-  tagline: "",
-  description: "",
-  email: "",
-  phone: "",
+  brandName: "Blueprint Advisors",
+  tagline: "Career Guidance, Workshops & Seminars, Admission Guidance",
+  description: "As strategic Career Architects, we transform career uncertainty into intentional, measurable success. In today's dynamic professional landscape, a traditional path is often insufficient.",
+  email: "thomas2020vision@gmail.com",
+  phone: "9159005588",
   address: "",
-  whatsapp: "",
-  footerNote: "",
+  whatsapp: "9159005588",
+  footerNote: "© 2026 Blueprint Advisors. All rights reserved.",
   socialLinks: [],
 };
 
 export const defaultHomePage = {
-  heroTitle: "",
-  heroSubtitle: "",
-  heroDescription: "",
-  heroCtaLabel: "",
+  heroTitle: "Strategic Career Architects",
+  heroSubtitle: "Blueprint Advisors",
+  heroDescription: "Welcome to Blueprint Advisors. As strategic Career Architects, we transform career uncertainty into intentional, measurable success. We specialize in providing counselling to develop robust, custom-designed career blueprints that align your core strengths, market opportunities, and long-term vision.",
+  heroCtaLabel: "Book a Session",
   heroCtaHref: "/book-session",
   heroImage: null,
-  aboutTitle: "",
-  aboutText: "",
-  whyChooseUsTitle: "",
-  whyChooseUsItems: [],
-  contactTitle: "",
-  contactText: "",
+  aboutTitle: "About Us",
+  aboutText: "We don't just offer advice; we help you to explore the methodology and structure required to build a resilient, fulfilling, and high-impact professional future.",
+  whyChooseUsTitle: "Why Choose Us",
+  whyChooseUsItems: ["Career Guidance", "Workshops & Seminars", "Admission Guidance", "Measurable Success"],
+  contactTitle: "Get In Touch",
+  contactText: "Ready to build your career blueprint? Contact us today.",
 };
 
 export const defaultAboutPage = {
@@ -72,3 +72,13 @@ export const defaultBookPage = {
   formHeading: "",
   formDescription: "",
 };
+
+export const defaultPackages = [
+  { _id: "1", title: "Mentoria Standard (8-9 Students)", price: "₹ 5,500", target: "8-9 STUDENTS", planName: "Discover", features: ["Psychometric assessment to measure your interests", "1 career counselling session with Mentoria\\'s expert career coaches", "Lifetime access to Knowledge Gateway", "Invites to live webinars by industry experts"] },
+  { _id: "2", title: "Mentoria Premium (8-9 Students)", price: "? 15,000", target: "8-9 STUDENTS", planName: "Discover plus+", features: ["Psychometric assessments to measure your interests, personality and abilities", "8 career counselling sessions (1 every year)", "Lifetime access to Knowledge Gateway", "Invites to live webinars by industry experts", "Customised reports after each session with education pathways", "Guidance on studying abroad", "CV building during internships/graduation"] },
+  { _id: "3", title: "Mentoria Standard (10-12 Students)", price: "? 5,999", target: "10-12 STUDENTS", planName: "Achieve Online", features: ["Psychometric assessment to measure your interests, personality and abilities", "1 career counselling session", "Lifetime access to Knowledge Gateway", "Pre-recorded webinars by industry experts"] },
+  { _id: "4", title: "Mentoria Premium (10-12 Students)", price: "? 10,599", target: "10-12 STUDENTS", planName: "Achieve Plus+", features: ["Psychometric assessment to measure your interests, personality and abilities", "4 career counselling sessions", "Lifetime access to Knowledge Gateway", "Attend live webinars by industry experts", "Customised reports after each session with education pathways", "Guidance on studying abroad", "CV reviews during internships/graduation"] },
+  { _id: "5", title: "Mentoria Standard (College Graduates)", price: "? 6,499", target: "COLLEGE GRADUATES", planName: "Ascend Online", features: ["Psychometric assessment to measure your interests, personality and abilities", "1 career counselling session", "Lifetime access to Knowledge Gateway", "Pre-recorded webinars by industry experts"] },
+  { _id: "6", title: "Mentoria Premium (College Graduates)", price: "? 10,599", target: "COLLEGE GRADUATES", planName: "Ascend Plus+", features: ["Psychometric assessment to measure your interests, personality and abilities", "3 career counselling sessions", "Lifetime access to Knowledge Gateway", "Attend live webinars by industry experts", "Customised reports after each session with education pathways", "Guidance on studying abroad", "CV reviews during internships/graduation"] }
+];
+

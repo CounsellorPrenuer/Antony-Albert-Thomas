@@ -24,7 +24,7 @@ import {
   defaultHomePage,
   defaultServices,
   defaultSiteSettings,
-  defaultTestimonials,
+  defaultTestimonials, defaultPackages,
 } from "@/sanity/lib/defaults";
 type SiteSettings = typeof defaultSiteSettings;
 type HomePage = typeof defaultHomePage;
@@ -122,5 +122,5 @@ export async function getBookPage() {
 }
 
 export async function getPackages() {
-  return sanityFetch<any[]>({ query: allPackagesQuery, tags: ["package"] }).catch(() => []);
+  const data = await sanityFetch<any[]>({ query: allPackagesQuery, tags: ["package"] }).catch(() => null); return (data && data.length > 0) ? data : defaultPackages;
 }
