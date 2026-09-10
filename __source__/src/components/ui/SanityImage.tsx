@@ -14,11 +14,9 @@ export function SanityImage({ image, alt, className = "" }: SanityImageProps) {
 
   if (typeof image === 'string') {
     return (
-      <Image
+      <img
         src={image}
         alt={alt}
-        width={1200}
-        height={800}
         className={`h-full w-full rounded-2xl object-cover ${className}`}
       />
     );

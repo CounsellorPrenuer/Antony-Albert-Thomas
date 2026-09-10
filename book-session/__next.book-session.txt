@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
 2:I[25935,["/Antony-Albert-Thomas/_next/static/chunks/a91a6f5d8c3722b9.js","/Antony-Albert-Thomas/_next/static/chunks/a4001ef6bcf408b4.js"],"default"]
 3:I[66656,["/Antony-Albert-Thomas/_next/static/chunks/a91a6f5d8c3722b9.js","/Antony-Albert-Thomas/_next/static/chunks/a4001ef6bcf408b4.js"],"default"]
-0:{"buildId":"te6hxWism9OrQiUf3Rdnr","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"luS4Pu3RWY5QskVuQ8_y2","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
