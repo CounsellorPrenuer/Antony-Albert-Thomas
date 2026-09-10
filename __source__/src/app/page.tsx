@@ -39,6 +39,7 @@ export default async function HomePage() {
                 Explore Services
               </Link>
           </div>
+          </div>
         </Container>
       </section>
 
