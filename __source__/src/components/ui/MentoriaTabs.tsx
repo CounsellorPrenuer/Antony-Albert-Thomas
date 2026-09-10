@@ -229,7 +229,7 @@ export function MentoriaTabs() {
               <p className="text-sm font-extrabold text-[#001F3F] mt-1">{pkg.price}</p>
               <p className="text-sm text-slate-600 mt-3">{pkg.desc}</p>
             </div>
-            <a href="/contact" className="inline-block rounded bg-[#8F9CFF] px-6 py-2 text-sm font-bold text-white" style={{ color: "#ffffff" }} hover:bg-blue-500 text-center w-full sm:w-auto mt-4 self-start">
+            <a href="/contact" className="inline-block rounded bg-[#8F9CFF] px-6 py-2 text-sm font-bold text-white hover:bg-blue-500 text-center w-full sm:w-auto mt-4 self-start" style={{ color: "#ffffff" }}>
               BUY NOW
             </a>
           </div>
